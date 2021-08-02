@@ -29,6 +29,7 @@ const alertOptions = {
 
 class App extends Component {
   componentDidMount() {
+    // If token exists, load user instead of redirecting to login
     store.dispatch(loadUser());
   }
 
